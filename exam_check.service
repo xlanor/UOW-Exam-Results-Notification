@@ -6,7 +6,7 @@ After=multi-user.target
 Type=idle
 WorkingDirectory = /home/elanor/ftp/files/exam_results
 User=jingkai
-Group=user
+Group=jingkai
 ExecStart=/usr/bin/python3 check_uow_sols.py
 
 [Install]
