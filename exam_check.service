@@ -1,0 +1,13 @@
+[Unit] 
+Description=UOWScraper
+After=multi-user.target 
+
+[Service]
+Type=idle
+WorkingDirectory = /home/elanor/ftp/files/exam_results
+User=jingkai
+Group=user
+ExecStart=/usr/bin/python3 check_uow_sols.py
+
+[Install]
+WantedBy=multi-user.target
